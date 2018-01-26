@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Spotyfake</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
+<link rel="stylesheet" href="css/style.css">  
+</head>
+
+<body>
+
+  <nav class="nav justify-content-center">
+  <a href="#" class="nav-link">Home</a>
+  <a href="#" class="nav-link">We Music</a>
+  <a href="#" class="nav-link">About</a>
+  <a href="#" class="nav-link">Info</a>
+</nav>
+
+<main>
+<section class="container-flud">
+  <div class="banner"></div>
+  <div class="container">
+    <div class="row mt-3">
+      <div class="col-sm-12 col-xl-6 mt-3">
+        <h1 class="text-secondary">Spotyfake</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <buttton class="btn btn-outline-success">More information</buttton>
+      </div>
+      
+      <div class="col-sm-12 col-xl-6 mt-3">
+        <h1 class="text-secondary">Join Up!</h1>
+        <form class="animated fadeInRight">
+          <div class="form-control">
+            <label for="name">Email</label>
+            <input type="text" id="name" placeholder="Name@dominio.com" class="form-control">
+            <label for="pass">Password</label>
+            <input type="passowrd" id="pass" placeholder="Password" class="form-control">
+            <button class="btn btn-outline-success">Login</button> 
+          </div>
+          </form>
+        </div>
+    </div>
+  </div>
+</section>
+<hr>
+<section class="container text-center">
+  <h2 class="text-secondary">Team Develoment</h2>
+  <div class="row mt-3">
+    <div class="col-sm-4 mt-3" v-for="profile in profiles">
+    <div class="profile">
+      <img :src="profile.imgLink" alt="" class="profile-photo rounded-circle">
+      <h4 class="text-center mt-2">{{ profile.name }}</h4> 
+      <p>{{ profile.rol }}</p> 
+    </div>
+  </div>
+  </div>
+</section>
+  
+</main>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.3/vue.min.js'></script>
+<script  src="js/index.js"></script>
+</body>
+
+</html>
